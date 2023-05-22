@@ -39,5 +39,17 @@ for (let i = 0; i < matrizCodigo.length; i++){
 }
 return stringDesencriptar;
 
-
 }
+
+function copy() {
+    // Get the text field
+    var copyText =  document.getElementById("mensaje").value;
+  console.log(copyText)
+
+  
+     // Copy the text inside the text field
+    navigator.clipboard.writeText(copyText);
+  
+    // Alert the copied text
+    alert("Texto Copiado: " + copyText);
+  }
